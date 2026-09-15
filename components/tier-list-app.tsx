@@ -116,11 +116,20 @@ export default function TierListApp() {
   async function exportPng() {
     const node = document.getElementById("tier-board")
     if (!node) return
-    const data = await toPng(node, { pixelRatio: 2, cacheBust: true, backgroundColor: "#171717" })
-    const link = document.createElement("a")
-    link.download = "mein-mcdonalds-tier-list.png"
-    link.href = data
-    link.click()
+    try {
+      const data = await toPng(node, {
+        pixelRatio: 2,
+        cacheBust: true,
+        backgroundColor: "#171717",
+        skipFonts: true,
+      })
+      const link = document.createElement("a")
+      link.download = "mein-mcdonalds-tier-list.png"
+      link.href = data
+      link.click()
+    } catch (error) {
+      console.error("Der Tier-List-Export ist fehlgeschlagen.", error)
+    }
   }
   return (
     <main className="app-shell">
