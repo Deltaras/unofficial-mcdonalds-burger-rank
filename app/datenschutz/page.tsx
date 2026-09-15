@@ -16,14 +16,6 @@ export default function DatenschutzPage() {
         Die Daten werden nicht an den Betreiber übertragen. Du kannst die gespeicherte Liste durch
         das Zurücksetzen der Liste oder durch Löschen der Browserdaten entfernen.
       </p>
-      <h2>Vercel Analytics</h2>
-      <p>
-        Diese Website verwendet in der Produktionsversion Vercel Analytics zur Erstellung
-        zusammengefasster Nutzungsstatistiken. Dabei können technische Informationen wie Seitenaufrufe,
-        Referrer und ungefähre Geräte- oder Browserdaten verarbeitet werden. Anbieter ist Vercel Inc.,
-        340 S Lemon Ave #4133, Walnut, CA 91789, USA. Weitere Informationen findest du in der
-        Datenschutzerklärung von Vercel.
-      </p>
       <h2>Externe Inhalte</h2>
       <p>
         Die Burger-Bilder werden von dieser Website selbst ausgeliefert. Es werden keine externen
