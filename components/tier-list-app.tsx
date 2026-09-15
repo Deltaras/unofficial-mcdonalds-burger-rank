@@ -13,6 +13,7 @@ import {
   useSensors,
 } from "@dnd-kit/core"
 import { CSS } from "@dnd-kit/utilities"
+import Link from "next/link"
 import { Download, RotateCcw, GripVertical, Utensils } from "lucide-react"
 import { toPng } from "html-to-image"
 import {
@@ -211,7 +212,11 @@ export default function TierListApp() {
         </section>
       </DndContext>
       <footer>
-        Temporär verfügbare Burger in Deutschland · Deine Liste wird automatisch lokal gespeichert
+        <span>Inoffizielles Fanprojekt · Nicht mit McDonald&apos;s verbunden</span>
+        <nav aria-label="Rechtliche Informationen">
+          <Link href="/impressum">Impressum</Link>
+          <Link href="/datenschutz">Datenschutz</Link>
+        </nav>
       </footer>
     </main>
   )

@@ -255,6 +255,48 @@ footer {
   text-align: center;
   padding-top: 32px;
 }
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+footer a,
+.legal-page a {
+  color: var(--yellow);
+  text-decoration: none;
+}
+footer a:hover,
+.legal-page a:hover {
+  text-decoration: underline;
+}
+.legal-page {
+  width: min(760px, calc(100% - 36px));
+  margin: auto;
+  padding: 48px 0 64px;
+}
+.legal-page h1 {
+  margin-bottom: 28px;
+}
+.legal-page h2 {
+  margin: 28px 0 8px;
+  font-size: 22px;
+}
+.legal-page p {
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 8px 0;
+}
+.legal-page .placeholder {
+  padding: 12px 14px;
+  border: 1px solid var(--red);
+  color: #f4b4a9;
+  background: #2b1715;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 28px;
+}
 @media (max-width: 640px) {
   .app-shell {
     width: min(100% - 22px, 1180px);
