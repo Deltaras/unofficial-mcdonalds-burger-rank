@@ -21,6 +21,13 @@ export default function DatenschutzPage() {
         Die Burger-Bilder werden von dieser Website selbst ausgeliefert. Es werden keine externen
         Schriftarten eingebunden.
       </p>
+      <h2>Externer Unterstützungslink</h2>
+      <p>
+        Auf dieser Website befindet sich ein freiwilliger Link zu Buy Me a Coffee. Beim Aufrufen
+        des Links wird die Website von Buy Me a Coffee geöffnet. Dabei können Daten gemäß der
+        Datenschutzerklärung von Buy Me a Coffee verarbeitet werden. Eine automatische
+        Datenübertragung findet durch den Link nicht statt.
+      </p>
       <Link className="back-link" href="/">
         Zurück zur Tier List
       </Link>

@@ -14,7 +14,7 @@ import {
 } from "@dnd-kit/core"
 import { CSS } from "@dnd-kit/utilities"
 import Link from "next/link"
-import { Download, RotateCcw, GripVertical, Utensils } from "lucide-react"
+import { Coffee, Download, RotateCcw, GripVertical, Utensils } from "lucide-react"
 import { toPng } from "html-to-image"
 import {
   BoardState,
@@ -211,6 +211,16 @@ export default function TierListApp() {
           </DropZone>
         </section>
       </DndContext>
+      <a
+        className="support-link"
+        href="https://buymeacoffee.com/der_schmolch"
+        target="_blank"
+        rel="noreferrer"
+        title="Hat dir die Tier List gefallen? Spendiere mir gern einen Kaffee - aber nur, wenn du möchtest."
+        aria-label="Einen Kaffee spendieren"
+      >
+        <Coffee size={16} aria-hidden="true" />
+      </a>
       <footer>
         <span>Inoffizielles Fanprojekt · Nicht mit McDonald&apos;s verbunden</span>
         <nav aria-label="Rechtliche Informationen">
