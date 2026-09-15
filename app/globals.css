@@ -270,6 +270,28 @@ footer a:hover,
 .legal-page a:hover {
   text-decoration: underline;
 }
+.support-link {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #4b4436;
+  border-radius: 50%;
+  background: #201d18e8;
+  color: #c9a94e;
+  box-shadow: 0 4px 14px #0006;
+  opacity: 0.72;
+  transition: opacity 0.2s, color 0.2s, transform 0.2s;
+}
+.support-link:hover,
+.support-link:focus-visible {
+  color: var(--yellow);
+  opacity: 1;
+  transform: translateY(-2px);
+}
 .legal-page {
   width: min(760px, calc(100% - 36px));
   margin: auto;
@@ -330,5 +352,9 @@ footer a:hover,
   }
   .burger-pool {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .support-link {
+    right: 12px;
+    bottom: 12px;
   }
 }
