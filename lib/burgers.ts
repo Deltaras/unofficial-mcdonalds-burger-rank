@@ -1,5 +1,7 @@
 export type Burger = { id: string; name: string; subtitle: string; image: string }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
+
 export const burgers: Burger[] = [
   ["der-m", "Der M", "Groß, kräftig & klassisch", "der-m.png"],
   ["der-m-bacon", "Der M Bacon", "Mit extra Bacon", "der-m-bacon.png"],
@@ -54,7 +56,12 @@ export const burgers: Burger[] = [
     "chickenburger.png",
   ],
   ["chickenburger", "Chickenburger", "Knusprig & unkompliziert", "chickenburger.png"],
-].map(([id, name, subtitle, image]) => ({ id, name, subtitle, image: `/burgers/${image}` }))
+].map(([id, name, subtitle, image]) => ({
+  id,
+  name,
+  subtitle,
+  image: `${basePath}/burgers/${image}`,
+}))
 
 export const tiers = [
   { id: "S", label: "S", color: "#f4c430" },
